@@ -1,0 +1,24 @@
+{
+    "env": {
+        "browser": true,
+        "commonjs": true,
+        "es2021": true
+    },
+    "extends": "airbnb-base",
+    "overrides": [
+    ],
+    "parserOptions": {
+        "ecmaVersion": "latest"
+    },
+    "plugins": ["my-project"],
+    "rules": {
+        "max-params": ["error", 1],
+        "no-inline-comments": "error",
+        "quotes": ["error", "double"],
+        "max-lines-per-function": [1, {"max": 2, "skipComments": true}],
+        "my-project/find-error": "error",
+        "my-project/find-class-error" : "error",
+        "my-project/find-switch-error" : "error",
+        "my-project/find-if-error-suggest-extract": "error"
+    }
+}
